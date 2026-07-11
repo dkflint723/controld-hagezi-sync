@@ -9,7 +9,7 @@
 # Your ControlD API Write Token.
 # Get it from: https://controld.com/dashboard/api
 # You can also leave this empty and use the CONTROLD_API_TOKEN env var.
-api_token = "Controld_API"
+api_token = "CONTROLD_API_TOKEN"
 
 # Uncomment to skip the upstream freshness report at the end of each sync run.
 # This avoids unauthenticated GitHub API calls (60 req/hr limit) — useful for CI.
