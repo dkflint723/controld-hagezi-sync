@@ -1,8 +1,10 @@
 name: Star History
 
 on:
-  schedule:
-    - cron: '0 6 * * *'
+  # Scheduled runs are disabled on this fork: the chart generator needs the
+  # STAR_HISTORY_TOKEN secret, and secrets are not inherited from upstream, so
+  # every scheduled run failed with an empty GH_TOKEN. Manual dispatch is kept
+  # for the case where the secret is configured on this fork later.
   workflow_dispatch:
 
 permissions:
